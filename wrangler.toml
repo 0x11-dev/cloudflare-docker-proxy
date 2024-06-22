@@ -13,13 +13,14 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-   { pattern = "docker.mirror.e2e.dev", custom_domain = true },
-   { pattern = "quay.mirror.e2e.dev", custom_domain = true },
-   { pattern = "gcr.mirror.e2e.dev", custom_domain = true },
-   { pattern = "k8s-gcr.mirror.e2e.dev", custom_domain = true },
-   { pattern = "k8s.mirror.e2e.dev", custom_domain = true },
-   { pattern = "ghcr.mirror.e2e.dev", custom_domain = true },
-   { pattern = "cloudsmith.mirror.e2e.dev", custom_domain = true },
+    { pattern = "*.mirror.e2e.dev", custom_domain = true },
+   #{ pattern = "docker.mirror.e2e.dev", custom_domain = true },
+   #{ pattern = "quay.mirror.e2e.dev", custom_domain = true },
+   #{ pattern = "gcr.mirror.e2e.dev", custom_domain = true },
+   #{ pattern = "k8s-gcr.mirror.e2e.dev", custom_domain = true },
+   #{ pattern = "k8s.mirror.e2e.dev", custom_domain = true },
+   #{ pattern = "ghcr.mirror.e2e.dev", custom_domain = true },
+   #{ pattern = "cloudsmith.mirror.e2e.dev", custom_domain = true },
  ]
 
 [env.production.vars]
