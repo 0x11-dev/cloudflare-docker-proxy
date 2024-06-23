@@ -15,6 +15,7 @@ name = "cloudflare-docker-proxy"
 routes = [
    #{ pattern = "*.mirror.e2e.dev", custom_domain = true },
    { pattern = "docker.mirror.e2e.dev", custom_domain = true },
+   { pattern = "download-docker-com.mirror.e2e.dev", custom_domain = true },
    { pattern = "quay.mirror.e2e.dev", custom_domain = true },
    { pattern = "gcr.mirror.e2e.dev", custom_domain = true },
    { pattern = "k8s-gcr.mirror.e2e.dev", custom_domain = true },

@@ -8,6 +8,7 @@ const dockerHub = "https://registry-1.docker.io";
 const routes = {
   // production
   "docker.mirror.e2e.dev": dockerHub,
+  "download-docker-com.mirror.e2e.dev": "https://download.docker.com",
   "quay.mirror.e2e.dev": "https://quay.io",
   "gcr.mirror.e2e.dev": "https://gcr.io",
   "k8s-gcr.mirror.e2e.dev": "https://k8s.gcr.io",
